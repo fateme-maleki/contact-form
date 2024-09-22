@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-form</title>
+    <link rel="stylesheet" href="./resources/css/index.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <div>
+        <h1>Contact Us</h1>
+      </div>
+      <div class="contact-form">
+        <div class="form-group">
+          <label for="first-name">First Name*</label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name*</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+      </div>
+      <div class="email-group">
+        <label for="email">Email</label><br />
+        <input type="text" id="email" name="email" /><br />
+      </div>
+
+      <p>Query Type</p>
+      <div class="query-group">
+        <div class="general-group">
+          <input
+            type="radio"
+            id="General Enquiry"
+            name="query_type"
+            value="General Enquiry"
+          />
+          <label for="General Enquiry">General Enquiry</label><br />
+        </div>
+        <div class="support-group">
+          <input
+            type="radio"
+            id="Support Request"
+            name="query_type"
+            value="Support Request"
+          />
+          <label for="Support Request">Support Request</label>
+        </div>
+      </div>
+      <div class="message-group">
+        <label for="message">Message</label><br />
+        <input type="text" id="message" name="message" /><br />
+      </div>
+      <div>
+        <br />
+        <form>
+          <input type="checkbox" id="consent" name="consent" value="consent" />
+          <label for="consent"> I consent to being contacted by the team</label
+          ><br />
+        </form>
+      </div>
+      <br />
+      <div class="button">submit</div>
+    </section>
+  </body>
+</html>
